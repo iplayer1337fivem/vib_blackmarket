@@ -134,55 +134,175 @@ Config.MarketPeds = {
 Config.EntranceTypes = {
     Riddles = {
         {
-            Question = "What gets more wet as it dries?",
+            Question = "Hvad bliver mere vådt, jo mere det tørrer?",
             Answers = {
-                "A Human",
-                "A Spud",
-                "A Sponge",
-                "A Towel",
+                "Et menneske",
+                "En kartoffel",
+                "En svamp",
+                "Et håndklæde",
             },
-            Correct_Answer = "A Towel", -- Must match one of the [Answers] above
+            Correct_Answer = "Et håndklæde", -- Skal matche et af [Answers] ovenfor
         },
         {
-            Question = "What has to be broken before you can use it?",
+            Question = "Hvad skal brydes før du kan bruge det?",
             Answers = {
-                "A Phone",
-                "A Mirror",
-                "A Chair",
-                "An Egg",
+                "En telefon",
+                "Et spejl",
+                "En stol",
+                "Et æg",
             },
-            Correct_Answer = "An Egg",
+            Correct_Answer = "Et æg",
         },
         {
-            Question = "What creature walks on four legs in the morning, two legs in the afternoon, and three legs in the evening?",
+            Question = "Hvilket væsen går på fire ben om morgenen, to ben om eftermiddagen, og tre ben om aftenen?",
             Answers = {
-                "A Centipede",
-                "A Dog",
-                "A Paraplegic",
-                "A Man",
+                "En tusindben",
+                "En hund",
+                "En paraplegiker",
+                "Et menneske",
             },
-            Correct_Answer = "A Man",
+            Correct_Answer = "Et menneske",
         },
         {
-            Question = "What is always in front of you but you can't see it?",
+            Question = "Hvad er altid foran dig, men du kan ikke se det?",
             Answers = {
-                "A Car",
-                "A Phone",
-                "Your Nose",
-                "The Future",
+                "En bil",
+                "En telefon",
+                "Din næse",
+                "Fremtiden",
             },
-            Correct_Answer = "The Future",
+            Correct_Answer = "Fremtiden",
+        },
+        {
+            Question = "Hvad kan løbe, men aldrig gå, har en mund, men aldrig taler, har en seng, men sover aldrig?",
+            Answers = {
+                "En flod",
+                "En skygge",
+                "En fugl",
+                "En sten",
+            },
+            Correct_Answer = "En flod",
+        },
+        {
+            Question = "Hvad går op og ned, men bevæger sig aldrig?",
+            Answers = {
+                "En bold",
+                "En bølge",
+                "En trappe",
+                "En elevator",
+            },
+            Correct_Answer = "En trappe",
+        },
+        {
+            Question = "Jeg har nøgler, men ingen låse. Jeg har plads, men intet rum. Du kan gå ind, men ikke komme ind. Hvad er jeg?",
+            Answers = {
+                "En bil",
+                "Et skab",
+                "Et tastatur",
+                "Et hus",
+            },
+            Correct_Answer = "Et tastatur",
+        },
+        {
+            Question = "Hvad går gennem byer og marker, men bevæger sig aldrig?",
+            Answers = {
+                "En vej",
+                "En flod",
+                "En fugl",
+                "En sky",
+            },
+            Correct_Answer = "En vej",
+        },
+        {
+            Question = "Hvad har et hoved, en hale, er brun og har ingen ben?",
+            Answers = {
+                "En orm",
+                "En mønt",
+                "En stok",
+                "En bold",
+            },
+            Correct_Answer = "En mønt",
+        },
+        {
+            Question = "Hvad kan du bryde, uden at røre ved det eller sige noget?",
+            Answers = {
+                "Et løfte",
+                "Et glas",
+                "En gren",
+                "En mur",
+            },
+            Correct_Answer = "Et løfte",
+        },
+        {
+            Question = "Jeg flyver uden vinger. Jeg græder uden øjne. Uanset hvor jeg går, er mørket lige bag mig. Hvad er jeg?",
+            Answers = {
+                "En sky",
+                "En flagermus",
+                "En drage",
+                "En skygge",
+            },
+            Correct_Answer = "En sky",
+        },
+        {
+            Question = "Hvad kan fyldes med vand, men stadig være tørt?",
+            Answers = {
+                "En svamp",
+                "En flaske",
+                "Et hul",
+                "En skål",
+            },
+            Correct_Answer = "Et hul",
+        },
+        {
+            Question = "Hvad kan du fange, men ikke kaste?",
+            Answers = {
+                "En bold",
+                "En fisk",
+                "En kold",
+                "En blomst",
+            },
+            Correct_Answer = "En kold",
+        },
+        {
+            Question = "Hvad har en hals, men ingen hoved?",
+            Answers = {
+                "En flaske",
+                "En hund",
+                "En person",
+                "En skildpadde",
+            },
+            Correct_Answer = "En flaske",
+        },
+        {
+            Question = "Hvad har mange nøgler, men kan ikke åbne en eneste dør?",
+            Answers = {
+                "En låsesmed",
+                "En pianist",
+                "Et skab",
+                "Et tastatur",
+            },
+            Correct_Answer = "En pianist",
+        },
+        {
+            Question = "Hvad er det, der hvisker, men aldrig taler, har en seng, men aldrig sover, og kan bryde uden at røre noget?",
+            Answers = {
+                "En orm",
+                "En flod",
+                "En drøm",
+                "En bølge",
+            },
+            Correct_Answer = "En flod",
         },
     },
     NumberCode = math.random(1111, 9999), -- This can be as many numbers as you want or a static number
 }
 
 Config.Hacking = {
-    HackItem = "laptop", -- Item required to begin hack
+    HackItem = "crypto", -- Item required to begin hack
     ZoneOptions = {
         HackDuration = 10, -- How long the hack takes in seconds
-        HackProgressbarLabel = "Doing hacker stuff",
-        HackLabel = "Hack in", -- Label the player see's when targeting the zone
+        HackProgressbarLabel = "Din frække hacker",
+        HackLabel = "Hacking", -- Label the player see's when targeting the zone
         Cooldown = 60, -- Cooldown for obtaining [NumberCode] in seconds
     },
     Locations = { -- You can add as many locations here as you like
